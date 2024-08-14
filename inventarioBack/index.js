@@ -6,11 +6,11 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware
+
 app.use(cors());
 app.use(express.json());
 
-// Conexión a MongoDB
+
 mongoose.connect('mongodb://localhost:27017/inventarioDB', {
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -22,7 +22,7 @@ db.once('open', () => {
     console.log('Connected to MongoDB');
 });
 
-// Modelo de Producto
+
 const productSchema = new mongoose.Schema({
     name: String,
     description: String,
@@ -32,7 +32,7 @@ const productSchema = new mongoose.Schema({
 
 const Product = mongoose.model('Product', productSchema);
 
-// Rutas CRUD
+
 app.get('/api/products', async (req, res) => {
     const products = await Product.find();
     res.json(products);
@@ -54,10 +54,10 @@ app.delete('/api/products/:id', async (req, res) => {
     res.json({ message: 'Product deleted' });
 });
 
-// Serve static files from the React app
+
 app.use(express.static(path.join(__dirname, 'build')));
 
-// Catch-all handler to serve React's index.html for any unknown routes
+
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });

@@ -4,7 +4,7 @@ import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js';
 import './App.css';
 
-// Register Chart.js components
+
 ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale);
 
 function App() {
@@ -34,14 +34,14 @@ function App() {
     fetchProducts();
   };
 
-  // Data for the chart
+
   const chartData = {
     labels: products.map(product => product.name),
     datasets: [{
       label: 'Cantidad de Productos',
       data: products.map(product => product.quantity),
-      backgroundColor: '#d8a8a8', // Rosa claro
-      borderColor: '#d88a8a', // Rosa más oscuro
+      backgroundColor: '#d8a8a8', 
+      borderColor: '#d88a8a', 
       borderWidth: 1,
     }],
   };

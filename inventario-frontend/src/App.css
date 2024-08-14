@@ -1,13 +1,13 @@
-/* App.css */
+
 .App {
-  background-color: #f8e1e1; /* Fondo rosa */
+  background-color: #f8e1e1; 
   font-family: Arial, sans-serif;
   padding: 20px;
 }
 
 .form-container {
-  background-color: #ffffff; /* Fondo blanco para el formulario */
-  border: 2px solid #d8a8a8; /* Marco rosa claro */
+  background-color: #ffffff; 
+  border: 2px solid #d8a8a8; 
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
@@ -18,12 +18,12 @@
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #d8a8a8; /* Marco rosa claro */
+  border: 1px solid #d8a8a8; 
   border-radius: 4px;
 }
 
 .submit-button {
-  background-color: #d8a8a8; /* Color rosa claro */
+  background-color: #d8a8a8; 
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -32,7 +32,7 @@
 }
 
 .submit-button:hover {
-  background-color: #d88a8a; /* Rosa más oscuro al pasar el ratón */
+  background-color: #d88a8a; 
 }
 
 .product-list {
@@ -41,15 +41,15 @@
 }
 
 .product-item {
-  background-color: #ffffff; /* Fondo blanco para los productos */
-  border: 2px solid #d8a8a8; /* Marco rosa claro */
+  background-color: #ffffff; 
+  border: 2px solid #d8a8a8; 
   border-radius: 8px;
   padding: 10px;
   margin-bottom: 10px;
 }
 
 .delete-button {
-  background-color: #f08a8a; /* Color rosa fuerte */
+  background-color: #f08a8a; 
   color: #ffffff;
   border: none;
   padding: 5px 10px;
@@ -58,16 +58,16 @@
 }
 
 .delete-button:hover {
-  background-color: #f06a6a; /* Rosa más oscuro al pasar el ratón */
+  background-color: #f06a6a; 
 }
 
-/* App.css */
+
 .chart-container {
   height: 400px;
   width: 100%;
   margin-top: 20px;
-  background-color: #ffffff; /* Fondo blanco para la gráfica */
-  border: 2px solid #d8a8a8; /* Marco rosa claro */
+  background-color: #ffffff; 
+  border: 2px solid #d8a8a8; 
   border-radius: 8px;
   padding: 10px;
 }
