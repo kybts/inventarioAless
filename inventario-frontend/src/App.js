@@ -4,7 +4,6 @@ import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js';
 import './App.css';
 
-
 ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale);
 
 function App() {
@@ -34,14 +33,13 @@ function App() {
     fetchProducts();
   };
 
-
   const chartData = {
     labels: products.map(product => product.name),
     datasets: [{
       label: 'Cantidad de Productos',
       data: products.map(product => product.quantity),
-      backgroundColor: '#d8a8a8', 
-      borderColor: '#d88a8a', 
+      backgroundColor: 'rgba(255, 182, 193, 0.5)',  // Color de fondo rosa pastel
+      borderColor: 'rgba(255, 182, 193, 1)',         // Color de borde rosa pastel
       borderWidth: 1,
     }],
   };
@@ -98,4 +96,3 @@ function App() {
 }
 
 export default App;
-
